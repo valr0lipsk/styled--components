@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Flex from "./components/Flex";
 import Title from "./components/Title";
 
 const AppWrapper = styled.div`
@@ -11,7 +12,9 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Title color="green">Title</Title>
+      <Flex justify="center">
+        <Title color="green">Console cmd 2022. Valr.lipsk</Title>
+      </Flex>
     </AppWrapper>
   );
 }
