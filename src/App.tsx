@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Console from "./components/Console";
 import Flex from "./components/Flex";
 import Title from "./components/Title";
 
@@ -15,6 +16,7 @@ function App() {
       <Flex justify="center">
         <Title color="green">Console cmd 2022. Valr.lipsk</Title>
       </Flex>
+      <Console color="green"/>
     </AppWrapper>
   );
 }
