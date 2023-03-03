@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const Global = createGlobalStyle`* {
   margin: 0;
@@ -10,12 +10,21 @@ const Global = createGlobalStyle`* {
   font-family: consolas;
 }`;
 
+const theme = {
+  colors: {
+    primary: 'green',
+    secondary: 'red'
+  }
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Global />
-    <App />
+    <ThemeProvider theme={theme}>
+      <Global />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

@@ -16,11 +16,11 @@ function App() {
   return (
     <AppWrapper>
       <Flex justify="center">
-        <Title color="green">Console cmd 2023. Valr.lipsk</Title>
+        <Title>Console cmd 2023. Valr.lipsk</Title>
       </Flex>
-      <Flex direction="column">
-        <Console color="green" />
-        <Button alignSelf="flex-end" outlined color="green">Send</Button>
+      <Flex direction="column" margin="1em 0">
+        <Console  />
+        <Button alignSelf="flex-end" outlined>Send</Button>
       </Flex>
     </AppWrapper>
   );
